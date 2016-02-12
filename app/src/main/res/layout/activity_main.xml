@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ashish.testapp1.MainActivity">
+    <FrameLayout
+        android:id="@+id/headerLayout"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_gravity="center"
+            android:src="@color/color2"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/topImage"
+            android:src="@color/color3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </FrameLayout>
+    <ashish.testapp1.CustomScrollView
+        android:id="@+id/customScrollView"
+        android:layout_below="@id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:background="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="5000dp" />
+    </ashish.testapp1.CustomScrollView>
+</RelativeLayout>
